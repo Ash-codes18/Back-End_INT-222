@@ -1,0 +1,9 @@
+{
+"student" : [
+    {
+        "name": "bunty",
+        "cgpa": 6.4,
+        "address": "lpu"
+    }
+]
+}

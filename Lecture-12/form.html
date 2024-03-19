@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Form</title>
+    <style>
+        *{
+    margin: 0px;
+}
+
+body{
+    background-color: #343a40;
+    color:beige;
+}
+
+
+.header{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #262a39;
+}
+
+
+.table{
+    /* border: solid palevioletred 4px; */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+#leg{
+    font-size: larger;
+    font-style: oblique;
+    font-family: Impact, Haettenschweiler, sans-serif;
+}
+
+input{
+    padding: 10px;
+    border-radius: 8%;
+}
+
+
+table,td{
+    border: solid rgb(14, 201, 86) 3px;
+    border-collapse: collapse;
+    border-radius: 40%;
+    padding: 15px;
+    margin: 10px;
+
+}
+
+#center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit{
+    background-color: palevioletred ;
+    border: solid pink;
+    border-radius: 30%;
+    padding: 5px 20px;
+    font-size: large;
+    font-family: 'Segoe UI', Verdana;
+    margin-top: 25px;
+    transition-duration: 0.4s;
+}
+
+#submit:hover{
+    transition: 0.3s;
+    background-color: rgb(59, 39, 188);
+    color: aliceblue;
+    border: solid #04182c 3px;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+
+    <form action="/apply" method="POST">
+
+
+                <table id="center">
+
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" id="User" placeholder="Enter Your Username" name="uname">
+                            <br><br>
+                            <span id="erruser"></span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" id="pass" placeholder="Enter Your Password" name="pass"w>
+                            <br><br>
+                            <span id="errpass"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact No.</td>
+                        <td><input type="text" id="num" placeholder="Enter Your Number" name="num">
+                        <br><br>
+                        <span id="errnum"></span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text" placeholder="Enter Your Address" name="addr"></td>
+                    </tr>
+
+                </table>
+                <center><a href="#"><input name="submit" type="submit" id="submit" value="Submit" name="sub"></a></center>
+            
+            
+            </form>
+</body>
+</html>

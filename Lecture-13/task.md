@@ -1,0 +1,1 @@
+Create a form having the fields username,password and below them there should be 2 buttons side by side - 1. login 2. logout         check if the user is able to perform login and logout or not =

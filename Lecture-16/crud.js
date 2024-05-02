@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/ecomm1")
+mongoose.connect("mongodb://localhost:27017/crud")
 
 const productSchema = new mongoose.Schema({
     name:String,
